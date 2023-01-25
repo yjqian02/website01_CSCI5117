@@ -7,21 +7,22 @@
     <title>Hosico Cat Fanpage</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <!-- import jquery! -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
   </head>
   <body>
-    <img src="/resources/images/hosico-cat.png" alt="picture of Hosico cat">
+    <img src="resources/images/hosico-cat.png" alt="picture of Hosico cat">
     <h1>Hosico Fans</h1>
-    <ul>
+    <ol>
         <li>Alice</li>
         <li>Monika</li>
         <li>Fiorela</li>
-    </ul>
+    </ol>
     <h2>Enter your name if you want to join the fan list!</h2>
-    <form action="/action_page.php">
-      <label for="fname">Name: </label>
-      <input type="text" id="fname" name="fname"><br><br>
-      <input type="submit" value="Submit">
-    </form> 
-	<script src="index.js"></script>
+    <label for="fname">Name: </label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <button onclick="myFunction()">Submit</button>
+    <script src="script.js"></script>
   </body>
 </html>
